@@ -33,7 +33,7 @@ CollBeet Assistant is a Google Action designed to work as a personal companion f
 
 1. Node.js and NPM
 2. Install the [Firebase CLI](https://firebase.google.com/docs/cli/)
-3. CollBeet Admin
+3. [CollBeet Admin](https://github.com/kalol-institute-of-technology/CollBeet-Admin)
 4. GCP Account with Billing Enabled
 
 ---
