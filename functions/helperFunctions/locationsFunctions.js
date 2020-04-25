@@ -10,8 +10,7 @@ const getStaffroomLocation = async userDepartment =>
 
       if (data) {
         let dept = userDepartment;
-
-        console.log(userDepartment);
+        
         const receivedStaffroomData = data.filter(function(i) {
           return i.staffroom == true && i.deptcode == dept;
         });
@@ -37,7 +36,6 @@ const getStaffroomLocation = async userDepartment =>
       }
     })
     .catch(err => {
-      console.log(err.message);
       return {
         success: false,
         message: `Sorry but I am unable to find any staff room's location.`
@@ -54,7 +52,6 @@ const getLabLocation = async userDepartment =>
       if (data) {
         let dept = userDepartment;
 
-        console.log(userDepartment);
         const receivedLabData = data.filter(function(i) {
           return i.lab == true && i.deptcode == dept;
         });
@@ -80,7 +77,6 @@ const getLabLocation = async userDepartment =>
       }
     })
     .catch(err => {
-      console.log(err.message);
       return {
         success: false,
         message: `Sorry but I am unable to find any lab's location.`
@@ -122,7 +118,6 @@ const getCollegeLocations = async locations =>
       }
     })
     .catch(err => {
-      console.log(err.message);
       return {
         success: false,
         message: `Sorry but I am unable to find any place location.`
